@@ -14,6 +14,7 @@ body {
 .main{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     margin-top: 74px;
 }
 form {
@@ -131,3 +132,4 @@ body.dark .historyBox h3 {
 #history li {
     margin-bottom: 5px;
 }
+
