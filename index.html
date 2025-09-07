@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature-conversion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <button type="button" id="toggleTheme">🌙 Dark Mode</button>
+<div class="main">
+    <form>
+        <h1>Temperature Conversion</h1>
+        <input type="number" value="0" id="textBox">
+        <div class="inputs">
+            <input type="radio" id="toFahrenheit" name="unit">
+            <label for="toFahrenheit">Celsius to Fahrenheit</label>
+            <input type="radio" id="toCelsius" name="unit">
+            <label for="toCelsius"> Fahrenheit to Celsius</label>
+        </div>
+        <button type="button" onclick="convert()">Submit</button>
+
+        <p id="result"></p>
+
+    </form>
+    <div class="container">
+    <div class="historyBox">
+    <h3>Conversion History</h3>
+    <ul id="history"></ul>
+    </div> 
+    <button type="button" onclick="clearHistory()">Clear</button>
+</div>
+</div>
+    <script src="script.js"></script>
+</body>
+
+</html>
